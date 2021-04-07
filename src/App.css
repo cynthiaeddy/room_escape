@@ -29,7 +29,7 @@
 	display: flex;
 	position: relative;
 	justify-content: center;
-	width: 40%;
+	width: 80%;
 	margin: auto;
 }
 .opener {
@@ -62,9 +62,9 @@ button:focus {
 }
 .key_button {
 	height: 15%;
-	width: 12%;
+	width: 6%;
 	top: 39%;
-	left: 44%;
+	/* left: 44%; */
 	border: none;
 	position: absolute;
 	background: url('assets/buttonPink.jpg');
@@ -73,9 +73,9 @@ button:focus {
 }
 .key_button:hover {
 	height: 15%;
-	width: 12%;
+	width: 6%;
 	top: 39%;
-	left: 44%;
+	/* left: 44%; */
 	border: none;
 	position: absolute;
 	background: url('assets/buttonRed.jpg');
@@ -84,11 +84,11 @@ button:focus {
 }
 
 .key_button.left {
-	left: -39%
+	left: 6%
 }
 
 img {
-	width: 100%;
+	width: 50%;
 }
 img.door_left {
 	border: 1px solid black;
@@ -99,7 +99,7 @@ img.door_right {
 	border-left: none;
 }
 .plant {
-	width:31%;
+	width:15.5%;
 	height: 40%;
 	border-radius: 46.5%;
 	border: none;
@@ -109,17 +109,17 @@ img.door_right {
 }
 .plant.right {
 	top: 34%;
-  left: 116%
+  right: 1.5%;
 }
 .chandelier {
-	width: 47%;
+	width: 23.5%;
 	height: 26%;
 	border: none;
 	position: absolute;
 	background-size: cover;
 }
 .chandOn_click {
-	width: 47%;
+	width: 23.5%;
 	height: 26%;
 	border: none;
 	position: absolute;

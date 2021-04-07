@@ -15,24 +15,24 @@ const Door = () => {
 
   const startLeftPlantStyle = {
     top: '34%',
-    left: '-49%',
-    transition: 'left 1s',
+    left: '.5%',
+    transition: 'left 10s',
     'z-index': '10',
   }
   const endLeftPlantStyle = {
     top: '34%',
-    left: '35%',
+    // left: '35%',
     transition: 'left 1s',
     'z-index': '10',
   }
   const startMidPlantStyle = {
     top: '34%',
-    left: '35%',
+    // right: '1%',
     transition: 'left 1s',
   }
   const endMidPlantStyle = {
     top: '34%',
-    left: '116%',
+    right: '1.5%',
     transition: 'left 1s',
   }
 
