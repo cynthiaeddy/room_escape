@@ -96,11 +96,14 @@ img {
 img.door_left {
 	border: 1px solid black;
 	border-right: none;
+	height: 50%;
 }
 img.door_right {
 	border: 1px solid black;
 	border-left: none;
+	height: 50%
 }
+
 
 .plant {
 	width:15.5%;
