@@ -8,12 +8,12 @@ import chandOn from '../assets/chandOn.jpg'
 const startLeftPlantStyle = {
   top: '34%',
   left: '.5%',
-  transition: 'all 2s ease-in-out',
+  transition: 'transform 400ms ease-in',
 }
 const endLeftPlantStyle = {
   top: '34%',
   // left: '35%',
-  transition: 'all 2s ease-in-out',
+  transition: 'transform 400ms ease-in',
 }
 const startMidPlantStyle = {
   top: '34%',
