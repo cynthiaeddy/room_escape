@@ -5,27 +5,6 @@ import door_open2laurarotate from '../assets/door_open2laurarotate.jpg'
 import chand from '../assets/chand.jpg'
 import chandOn from '../assets/chandOn.jpg'
 
-const startLeftPlantStyle = {
-  top: '34%',
-  left: '.5%',
-  transition: 'all 2s ease-in-out',
-}
-const endLeftPlantStyle = {
-  top: '34%',
-  // left: '35%',
-  transition: 'all 2s ease-in-out',
-}
-const startMidPlantStyle = {
-  top: '34%',
-  // right: '1%',
-  transition: 'left 1s',
-}
-const endMidPlantStyle = {
-  top: '34%',
-  right: '1.5%',
-  transition: 'left 1s',
-}
-
 const Door = () => {
   const [isLeftDoorSelected, setLeftDoorSelected] = useState(door_closed5)
   const [isRightDoorSelected, setRightDoorSelected] = useState('')
@@ -33,6 +12,29 @@ const Door = () => {
   const [isMidPlantMoved, setMidPlantMoved] = useState(true)
   const [isChandelierSelected, setChandelierSelected] = useState(chand)
   const [isChandelierOn, setChandelierOn] = useState(true)
+
+  const startLeftPlantStyle = {
+    top: '34%',
+    left: '.5%',
+    transition: 'left 10s',
+    'z-index': '10',
+  }
+  const endLeftPlantStyle = {
+    top: '34%',
+    // left: '35%',
+    transition: 'left 1s',
+    'z-index': '10',
+  }
+  const startMidPlantStyle = {
+    top: '34%',
+    // right: '1%',
+    transition: 'left 1s',
+  }
+  const endMidPlantStyle = {
+    top: '34%',
+    right: '1.5%',
+    transition: 'left 1s',
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => setRightDoorSelected(''), 1000)
@@ -67,7 +69,7 @@ const Door = () => {
 
       <button
         onClick={moveLeftPlant}
-        className="plant left"
+        className="plant"
         style={isLeftPlantMoved ? startLeftPlantStyle : endLeftPlantStyle}
       ></button>
       <button
