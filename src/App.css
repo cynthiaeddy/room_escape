@@ -31,6 +31,7 @@
 	justify-content: center;
 	width: 80%;
 	margin: auto;
+	flex-direction: row
 }
 .opener {
 border: 1px solid black;
