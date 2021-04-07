@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import door_closed5 from '../assets/door_closed5.jpg'
 import door_open2dr from '../assets/door_open2dr.jpg'
-import door_open2laurarotate from '../assets/door_open2laurarotate.jpg'
+import door_open2escape from '../assets/door_open2escape.jpg'
 import chand from '../assets/chand.jpg'
 import chandOn from '../assets/chandOn.jpg'
 
 const startLeftPlantStyle = {
   top: '34%',
   left: '.5%',
-  transition: 'all 2s ease-in-out',
+  transitionDuration: '3s',
 }
 const endLeftPlantStyle = {
   top: '34%',
-  // left: '35%',
-  transition: 'all 2s ease-in-out',
+  transitionDuration: '3s',
 }
 const startMidPlantStyle = {
   top: '34%',
-  // right: '1%',
   transition: 'left 1s',
 }
 const endMidPlantStyle = {
@@ -54,7 +52,7 @@ const Door = () => {
   return (
     <div className="door_container">
       <button
-        onClick={() => setLeftDoorSelected(door_open2laurarotate)}
+        onClick={() => setLeftDoorSelected(door_open2escape)}
         className="key_button"
       ></button>
       <button
