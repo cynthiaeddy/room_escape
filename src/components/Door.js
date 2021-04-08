@@ -75,7 +75,11 @@ const Door = () => {
         style={isMidPlantMoved ? startMidPlantStyle : endMidPlantStyle}
       ></button>
       <button onClick={chandActiveButton} className="plant right"></button>
-      <img src={isChandelierSelected} className="chandOn_click" />
+      <img
+        src={isChandelierSelected}
+        alt="chandelier"
+        className="chandOn_click"
+      />
     </div>
   )
 }
