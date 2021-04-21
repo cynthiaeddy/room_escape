@@ -20,7 +20,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: snow;
-	/* scroll-behavior: auto; */
+	position: fixed
 }
 .opener_container {
 	width: 80%;
