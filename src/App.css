@@ -8,6 +8,9 @@
 	margin: 0;
 	font-size: 1.6rem;
 }
+body {
+	overscroll-behavior: none;
+}
 
 .container {
 	overflow: hidden !important;
@@ -17,7 +20,7 @@
 	width: 100vw;
 	height: 100vh;
 	background: snow;
-	scroll-behavior: auto;
+	/* scroll-behavior: auto; */
 }
 .opener_container {
 	width: 80%;
