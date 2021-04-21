@@ -1,6 +1,6 @@
 # The White Door Escape
 Simple escape game app, paying homage to RustyLake Games.
-# Instructions
+## Instructions
 To run this app:
 
 Clone this repo.
@@ -11,7 +11,7 @@ Your browser will automatically launch my portfolio app to its home page.
 
 You can shut down the server by typing Control C in the terminal window where it is running.
 
-# Built with
-• React
+## Built with
+• React <br>
 • Deployed with Netlify
 
