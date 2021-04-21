@@ -70,7 +70,6 @@ button:focus {
 	height: 15%;
 	width: 6%;
 	top: 39%;
-	/* left: 44%; */
 	border: none;
 	position: absolute;
 	background: url('assets/buttonPink.jpg');
@@ -81,7 +80,6 @@ button:focus {
 	height: 15%;
 	width: 6%;
 	top: 39%;
-	/* left: 44%; */
 	border: none;
 	position: absolute;
 	background: url('assets/buttonRed.jpg');
@@ -106,7 +104,6 @@ img.door_right {
 	border-left: none;
 	height: 50%
 }
-
 
 .plant {
 	width:15.5%;
@@ -151,7 +148,6 @@ img.door_right {
 	}
 }
 
-
 @media (max-width: 900px) and (max-height: 450px) {
 	.opener_words {
 		width: 20%;
@@ -174,7 +170,6 @@ img.door_right {
 }
 @media (max-width: 568px) and (max-height: 320px) {
 	.opener_words {
-
 		font-size: 1.2rem
 	}
 }
