@@ -1,5 +1,5 @@
 # The White Door Escape
-Simple escape game app, paying homage to RustyLake Games.
+Simple escape game app, paying homage to Rusty Lake Games.
 ## Instructions
 To run this app:
 
