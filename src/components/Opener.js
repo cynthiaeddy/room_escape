@@ -20,10 +20,12 @@ const Opener = () => {
           </span>
           . I've taken the liberty of using their images and barely touching on
           the storyline itself.
+          <span>
+            <Link to="/escape" className="escape">
+              enter
+            </Link>
+          </span>
         </p>
-        <Link to="/escape" className="escape">
-          enter
-        </Link>
       </div>
     </div>
   )
