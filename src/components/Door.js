@@ -8,7 +8,6 @@ import chand from '../assets/chand.jpg'
 import chandOn from '../assets/chandOn.jpg'
 
 const randomDiscoImg = [door_open2dr, door_open2two, door_openparty]
-let activeDisco = 0
 
 const startLeftPlantStyle = {
   top: '34%',
@@ -56,19 +55,6 @@ const Door = () => {
     let imgChosen = Math.floor(Math.random() * randomDiscoImg.length)
 
     return randomDiscoImg[imgChosen]
-  }
-
-  function shuffle() {
-    var i = randomDiscoImg.length,
-      k,
-      temps // k is to generate random index and temp is to swap the values
-    while (--i > 0) {
-      k = Math.floor(Math.random() * (i + 1))
-      temps = randomDiscoImg[k]
-      randomDiscoImg[k] = randomDiscoImg[i]
-      randomDiscoImg[i] = temps
-    }
-    return temps
   }
 
   const doorsRight = isRightDoorSelected ? randomDisco() : door_closed5

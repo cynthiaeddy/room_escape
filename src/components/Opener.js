@@ -5,7 +5,7 @@ import opener from '../assets/image1opener85.jpg'
 const Opener = () => {
   return (
     <div className="opener_container">
-      <img src={opener} className="opener" />
+      <img src={opener} className="opener" alt="door and man illustration" />
       <div className="opener_words">
         <p className="words">
           This is a simple escape game paying homage to{' '}
