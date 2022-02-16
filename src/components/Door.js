@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import door_closed5 from '../assets/door_closed5.jpg'
 import door_open2dr from '../assets/door_open2dr.jpg'
+import door_open2two from '../assets/door_open2two.jpg'
+import door_openparty from '../assets/door_openparty.jpg'
 import door_open2escape from '../assets/door_open2escape.jpg'
 import chand from '../assets/chand.jpg'
 import chandOn from '../assets/chandOn.jpg'
+
+const randomDiscoImg = [door_open2dr, door_open2two, door_openparty]
+let activeDisco = 0
 
 const startLeftPlantStyle = {
   top: '34%',
@@ -47,7 +52,26 @@ const Door = () => {
     setChandelierOn()
   }
 
-  const doorsRight = isRightDoorSelected ? door_open2dr : door_closed5
+  const randomDisco = () => {
+    let imgChosen = Math.floor(Math.random() * randomDiscoImg.length)
+
+    return randomDiscoImg[imgChosen]
+  }
+
+  function shuffle() {
+    var i = randomDiscoImg.length,
+      k,
+      temps // k is to generate random index and temp is to swap the values
+    while (--i > 0) {
+      k = Math.floor(Math.random() * (i + 1))
+      temps = randomDiscoImg[k]
+      randomDiscoImg[k] = randomDiscoImg[i]
+      randomDiscoImg[i] = temps
+    }
+    return temps
+  }
+
+  const doorsRight = isRightDoorSelected ? randomDisco() : door_closed5
 
   return (
     <div className="door_container">
