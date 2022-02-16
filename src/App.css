@@ -1,181 +1,179 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 :root {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-	overscroll-behavior: none;
-	margin: 0;
-	font-size: 1.6rem;
-
+  overscroll-behavior: none;
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 .container {
-	overflow: hidden !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	background: snow;
-	position: fixed
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: snow;
+  position: fixed;
 }
 .opener_container {
-	width: 80%;
-	justify-content: center;
-	margin: auto;
-	position: relative
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  position: relative;
 }
 .door_container {
-	display: flex;
-	position: relative;
-	justify-content: center;
-	width: 80%;
-	margin: auto;
-	flex-direction: row
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  flex-direction: row;
 }
 .opener {
-border: 1px solid black;
-width: 100%
+  border: 1px solid black;
+  width: 100%;
 }
 
 .opener_words {
-	position: absolute;
-	width: 40%;
-	top: 68%;
-	right:5%;
-	width: 42%;
+  position: absolute;
+  width: 40%;
+  top: 68%;
+  right: 5%;
+  width: 42%;
   right: 3%;
 }
 
-p.words, a.escape {
-	line-height: 1.2;
-	color: white
+p.words,
+a.escape {
+  line-height: 1.2;
+  color: white;
 }
-span, a {
-	font-weight: bold;
-	color: white;
-	text-decoration: none;
+span,
+a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
-span:hover, a:hover {
-	color: rgba(255, 119, 206, 1)
+span:hover,
+a:hover {
+  color: rgba(255, 119, 206, 1);
 }
 a.escape {
-	margin-left:15px;
-	text-transform: uppercase;
-	font-size: 1.3rem
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 button:focus {
-	outline: 0;
+  outline: 0;
 }
 .key_button {
-	height: 15%;
-	width: 6%;
-	top: 39%;
-	border: none;
-	position: absolute;
-	background: url('assets/buttonPink.jpg');
-	background-size: cover;
-
+  height: 15%;
+  width: 6%;
+  top: 39%;
+  border: none;
+  position: absolute;
+  background: url('assets/buttonPink.jpg');
+  background-size: cover;
 }
 .key_button:hover {
-	height: 15%;
-	width: 6%;
-	top: 39%;
-	border: none;
-	position: absolute;
-	background: url('assets/buttonRed.jpg');
-	background-size: cover;
-
+  height: 15%;
+  width: 6%;
+  top: 39%;
+  border: none;
+  position: absolute;
+  background: url('assets/buttonRed.jpg');
+  background-size: cover;
 }
 
 .key_button.left {
-	left: 6%
+  left: 6%;
 }
 
 img {
-	width: 50%;
+  width: 50%;
 }
 img.door_left {
-	border: 1px solid black;
-	border-right: none;
-	height: 50%;
+  border: 1px solid black;
+  border-right: none;
+  height: 50%;
 }
 img.door_right {
-	border: 1px solid black;
-	border-left: none;
-	height: 50%
+  border: 1px solid black;
+  border-left: none;
+  height: 50%;
 }
 
 .plant {
-	width:15.5%;
-	height: 40%;
-	border-radius: 46.5%;
-	border: none;
-	position: absolute;
-	background: url("assets/plant.jpg");
-	background-size: cover
+  width: 15.5%;
+  height: 40%;
+  border-radius: 46.5%;
+  border: none;
+  position: absolute;
+  background: url('assets/plant.jpg');
+  background-size: cover;
 }
 .plant.right {
-	top: 34%;
+  top: 34%;
   right: 1.5%;
 }
 .plant.left {
-	z-index: 10;
-
+  z-index: 10;
 }
 .chandelier {
-	width: 23.5%;
-	height: 26%;
-	border: none;
-	position: absolute;
-	background-size: cover;
+  width: 23.5%;
+  height: 26%;
+  border: none;
+  position: absolute;
+  background-size: cover;
 }
 .chandOn_click {
-	width: 23.5%;
-	height: 26%;
-	border: none;
-	position: absolute;
-	background: url("assets/chandOn.jpg");
-	background-size: cover;
-	z-index: 40;
+  width: 23.5%;
+  height: 26%;
+  border: none;
+  position: absolute;
+  background: url('assets/chandOn.jpg');
+  background-size: cover;
+  z-index: 40;
 }
 
 @media (min-width: 1300px) {
-	.door_container {
-		width: 60%
-	}
-	.opener_container {
-		width: 60%
-	}
+  .door_container {
+    width: 60%;
+  }
+  .opener_container {
+    width: 60%;
+  }
 }
 
 @media (max-width: 900px) and (max-height: 450px) {
-	.opener_words {
-		width: 20%;
+  .opener_words {
+    width: 20%;
     top: 0%;
-	}
+  }
 }
 
 @media (max-width: 768px) and (max-height: 1024px) {
-	.opener_words {
-		width: 20%;
+  .opener_words {
+    width: 20%;
     top: 0%;
-	}
+  }
 }
 @media (max-width: 1024px) and (max-height: 1366px) {
-	.opener_words {
-		width: 20%;
+  .opener_words {
+    width: 20%;
     bottom: 10%;
-		top: inherit
-	}
+    top: inherit;
+  }
 }
 @media (max-width: 568px) and (max-height: 320px) {
-	.opener_words {
-		font-size: 1.2rem
-	}
+  .opener_words {
+    font-size: 1.2rem;
+  }
 }
-
