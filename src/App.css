@@ -11,7 +11,7 @@ body {
   font-size: 1.6rem;
 }
 
-.container {
+#container {
   overflow: hidden !important;
   display: flex;
   justify-content: center;
@@ -21,19 +21,37 @@ body {
   background: snow;
   position: fixed;
 }
+#turn {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: snow;
+}
+.rotate-container {
+  background: white;
+  border: 1px solid black;
+  padding: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .opener_container {
   width: 80%;
-  justify-content: center;
-  margin: auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .door_container {
   display: flex;
-  position: relative;
   justify-content: center;
   width: 80%;
-  margin: auto;
-  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .opener {
   border: 1px solid black;
@@ -61,13 +79,16 @@ a {
   text-decoration: none;
 }
 span:hover,
-a:hover {
+a:hover,
+a.escape:hover {
   color: rgba(255, 119, 206, 1);
 }
 a.escape {
   margin-left: 15px;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
 }
 
 button:focus {
@@ -143,22 +164,6 @@ img.door_right {
   z-index: 40;
 }
 
-@media (min-width: 1300px) {
-  .door_container {
-    width: 60%;
-  }
-  .opener_container {
-    width: 60%;
-  }
-}
-
-@media (max-width: 900px) and (max-height: 450px) {
-  .opener_words {
-    width: 20%;
-    top: 0%;
-  }
-}
-
 @media (max-width: 768px) and (max-height: 1024px) {
   .opener_words {
     width: 20%;
@@ -169,9 +174,35 @@ img.door_right {
   .opener_words {
     width: 20%;
     bottom: 10%;
-    top: inherit;
+    top: unset;
   }
 }
+@media (max-width: 750px) {
+  .opener_words {
+    top: 3% !important;
+  }
+}
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation: portrait) {
+  #turn {
+    display: block;
+  }
+  #container {
+    display: none;
+  }
+}
+
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation: landscape) {
+  #turn {
+    display: none;
+  }
+  #container {
+    display: block;
+  }
+}
+
 @media (max-width: 568px) and (max-height: 320px) {
   .opener_words {
     font-size: 1.2rem;
