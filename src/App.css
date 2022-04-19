@@ -39,10 +39,6 @@ body {
 }
 .opener_container {
   width: 80%;
-  /* justify-content: center;
-  margin: auto;
-  position: relative; */
-  /* margin-top: 20%; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,13 +46,8 @@ body {
 }
 .door_container {
   display: flex;
-  /* position: relative; */
   justify-content: center;
   width: 80%;
-  /* max-height: 90%; */
-  /* margin: auto;
-  flex-direction: row; */
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,7 +89,6 @@ a.escape {
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
   font-weight: 800;
-  /* color: rgb(245, 187, 224); */
 }
 
 button:focus {
@@ -174,15 +164,6 @@ img.door_right {
   z-index: 40;
 }
 
-@media (min-width: 1300px) {
-  .door_container {
-    width: 60%;
-  }
-  .opener_container {
-    width: 60%;
-  }
-}
-
 @media (max-width: 768px) and (max-height: 1024px) {
   .opener_words {
     width: 20%;
@@ -201,11 +182,6 @@ img.door_right {
     top: 3% !important;
   }
 }
-/* @media (max-height: 450px) {
-  .opener_words {
-    top: 5% !important;
-  }
-} */
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation: portrait) {
@@ -226,12 +202,6 @@ img.door_right {
     display: block;
   }
 }
-/* @media only screen and (orientation: portrait) {
-  body {
-    height: 100vw;
-    transform: rotate(90deg);
-  }
-} */
 
 @media (max-width: 568px) and (max-height: 320px) {
   .opener_words {
