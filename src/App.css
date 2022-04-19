@@ -23,15 +23,30 @@ body {
 }
 #turn {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: snow;
+}
+.rotate-container {
+  background: white;
+  border: 1px solid black;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .opener_container {
   width: 80%;
   justify-content: center;
   margin: auto;
   position: relative;
-  margin-top: 20%;
+  /* margin-top: 20%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .door_container {
   display: flex;
@@ -40,7 +55,11 @@ body {
   width: 80%;
   margin: auto;
   flex-direction: row;
-  margin-top: 20%;
+  /* margin-top: 20%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .opener {
   border: 1px solid black;
