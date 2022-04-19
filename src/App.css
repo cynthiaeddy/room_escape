@@ -33,9 +33,9 @@ body {
   border: 1px solid black;
   padding: 50px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
 }
 .opener_container {
   width: 80%;
@@ -44,7 +44,7 @@ body {
   position: relative;
   /* margin-top: 20%; */
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -59,7 +59,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
 }
 .opener {
   border: 1px solid black;
