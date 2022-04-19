@@ -39,9 +39,9 @@ body {
 }
 .opener_container {
   width: 80%;
-  justify-content: center;
+  /* justify-content: center;
   margin: auto;
-  position: relative;
+  position: relative; */
   /* margin-top: 20%; */
   position: absolute;
   top: 50%;
@@ -50,12 +50,11 @@ body {
 }
 .door_container {
   display: flex;
-  position: relative;
+  /* position: relative; */
   justify-content: center;
   width: 80%;
-  margin: auto;
-  flex-direction: row;
-  /* margin-top: 20%; */
+  /* margin: auto;
+  flex-direction: row; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -184,7 +183,7 @@ img.door_right {
 
 @media (max-height: 450px) {
   .opener_words {
-    top: 0% !important;
+    top: 5% !important;
   }
 }
 
