@@ -21,6 +21,11 @@ body {
   background: snow;
   position: fixed;
 }
+#turn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .opener_container {
   width: 80%;
   justify-content: center;
@@ -178,7 +183,12 @@ img.door_right {
     top: inherit;
   }
 }
-
+@media (max-width: 940px) {
+  .opener_container,
+  .door_container {
+    margin-top: 5%;
+  }
+}
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation: portrait) {
   #turn {
